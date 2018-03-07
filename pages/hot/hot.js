@@ -19,7 +19,7 @@ Page({
      * 页面相关事件处理函数--监听用户下拉动作
      */
     onPullDownRefresh: function () {
-        this.load_data()
+        this.load_data();
     },
   
     load_data: function() {
@@ -29,7 +29,8 @@ Page({
             success: function(res) {
                 that.setData({
                     latest_topics: res.data
-                })
+                });
+                wx.stopPullDownRefresh();
             }
         })        
     }
