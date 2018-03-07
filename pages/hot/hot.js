@@ -2,7 +2,7 @@ Page({/**
      * 页面的初始数据
      */
     data: {
-        hot_topics: []
+        topics: []
     },
     
     /**
@@ -20,8 +20,7 @@ Page({/**
     },
   
     load_data: function() {
-        var that = this;
-        
+        var that = this;        
         wx.request({
             url: 'https://www.v2ex.com/api/topics/hot.json',
             success: function(res) {
@@ -31,7 +30,7 @@ Page({/**
                   item.last_modified = utils.getDateDiff(item.last_modified)
                 }
                 that.setData({
-                    hot_topics: data
+                  topics: data
                 });
                 wx.stopPullDownRefresh();
             }

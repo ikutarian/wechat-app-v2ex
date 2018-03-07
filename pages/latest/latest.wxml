@@ -1,2 +1,2 @@
-<!--pages/latest/latest.wxml-->
-<text>pages/latest/latest.wxml</text>
+<import src="../../template/topics_list"/>
+<template is="topics_list" data="{{topics}}"/>
