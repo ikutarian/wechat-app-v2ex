@@ -92,3 +92,14 @@ https://www.v2ex.com/api/members/show.json?id=1
 ## 知识点
 
 * css 的 flex 布局
+
+## 参考demo
+
+* https://github.com/search?q=v2ex+%E5%B0%8F%E7%A8%8B%E5%BA%8F&ref=opensearch
+* https://github.com/newteo/team-blog-repo/issues/47
+* http://blog.csdn.net/qq_32067045/article/details/54562302 他的博客里有很多小程序的文章
+* http://blog.csdn.net/Mr_OOO/article/details/70196325
+* https://www.zhihu.com/question/37208845 css能不能实现左边div固定宽度,右边div自适应撑满剩下的宽度?
+* https://www.cnblogs.com/wxapp-union/p/6138830.html
+* http://blog.csdn.net/qianqianstd/article/details/60609389
+* https://www.cnblogs.com/sun8134/p/6395947.html

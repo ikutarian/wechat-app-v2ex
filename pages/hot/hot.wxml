@@ -1,11 +1,22 @@
-<scroll-view>
   <view wx:for="{{latest_topics}}" wx:for-item="item" wx:key="{{item.id}}">
-    <view class="item">
-        <image class='member_avatar' src='https:{{item.member.avatar_normal}}' mode='aspectFill'></image>
-        <br></br>
-        <text class='member_username'>{{item.member.username}}</text><br></br>
-        <text class='topic_title'>{{item.title}}</text>
+    <view class="top">
+        <view class="content">
+            <image class="member_avatar" src="https:{{item.member.avatar_normal}}" mode="scaleToFill"/>
+            <view class="center">
+                <text class="member_username">{{item.member.username}}</text>
+                <text class="time">三分钟前</text>
+            </view>
+            <view class="right">
+                <view class="node">
+                    <text class="node_title">{{item.node.title}}</text>
+                </view>
+                <image class="reply_img" src='/image/reply.png' mode='aspectFill'/>
+                <text class="reply_count">{{item.replies}}</text>
+            </view>
+        </view>
+        <view class='topic_title'>
+            <text>{{item.title}}</text>
+        </view>        
     </view>
     <view class="divider"></view>
   </view>
-</scroll-view>
