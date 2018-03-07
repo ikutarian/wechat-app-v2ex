@@ -1,11 +1,8 @@
-// pages/hot/hot.js
-Page({
-
-    /**
+Page({/**
      * 页面的初始数据
      */
     data: {
-        latest_topics: []
+        hot_topics: []
     },
     
     /**
@@ -24,11 +21,17 @@ Page({
   
     load_data: function() {
         var that = this;
+        
         wx.request({
             url: 'https://www.v2ex.com/api/topics/hot.json',
             success: function(res) {
+                var data = res.data;
+                var utils = require('../../utils/util.js');
+                for (var item of data) {
+                  item.last_modified = utils.getDateDiff(item.last_modified)
+                }
                 that.setData({
-                    latest_topics: res.data
+                    hot_topics: data
                 });
                 wx.stopPullDownRefresh();
             }

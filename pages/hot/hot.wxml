@@ -1,10 +1,10 @@
-  <view wx:for="{{latest_topics}}" wx:for-item="item" wx:key="{{item.id}}">
+  <view wx:for="{{hot_topics}}" wx:for-item="item" wx:key="{{item.id}}">
     <view class="top">
         <view class="content">
             <image class="member_avatar" src="https:{{item.member.avatar_normal}}" mode="scaleToFill"/>
             <view class="center">
                 <text class="member_username">{{item.member.username}}</text>
-                <text class="time">三分钟前</text>
+                <text class="time">{{item.last_modified}}</text>
             </view>
             <view class="right">
                 <view class="node">
