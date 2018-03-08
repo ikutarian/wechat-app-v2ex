@@ -27,3 +27,4 @@ API是从网上收集来的，本小程序需要用到的API只有几个，于�
 * https://www.cnblogs.com/sun8134/p/6395947.html
 * http://blog.csdn.net/liuyan19891230/article/details/50969393 文字不换行
 * https://www.jianshu.com/p/a3481a255842 页面传参
+* http://blog.csdn.net/qq_38125123/article/details/69948071 wxParse解析HTML标签
