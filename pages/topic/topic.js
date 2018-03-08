@@ -7,7 +7,8 @@ Page({
      */
     data: {
         item: null,
-        footer: ''
+        footer: '',
+        replies: []
     },
 
     /**
@@ -15,6 +16,7 @@ Page({
      */
     onLoad: function (options) {
         var that = this;
+        
         wx.request({
             url: 'https://www.v2ex.com/api/topics/show.json?id=' + options.id,
             success: function(res) {
@@ -25,6 +27,15 @@ Page({
                     footer: data.replies + ' 回复&nbsp;|&nbsp;直到 ' + data.last_modified
                 });
             }
-        })
+        });
+        
+        wx.request({
+            url: 'https://www.v2ex.com/api/replies/show.json?topic_id=' + options.id,
+            success: function(res) {                
+                that.setData({
+                    replies: res.data
+                });
+            }
+        });
     }
 })

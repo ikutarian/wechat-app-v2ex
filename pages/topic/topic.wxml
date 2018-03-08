@@ -19,3 +19,19 @@
     <text class="footer_text" decode="true">{{footer}}</text>
 </view>
 <view class="divider"></view>
+
+<view>
+    <view class="reply" wx:for="{{replies}}" wx:for-item="item" wx:key="{{item.member.id}}">
+        <view class="header">
+            <image class="member_avatar" src="https:{{item.member.avatar_normal}}" mode="scaleToFill"/>
+            <view class="center">
+                <text class="member_username">{{item.member.username}}</text>
+                <text class="time">{{item.last_modified}}</text>
+            </view>            
+        </view>
+        <view class='reply_content'>
+            <text>{{item.content}}</text>
+        </view>
+    </view>
+</view>
+<view class="reply_divider"></view>

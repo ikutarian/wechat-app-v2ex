@@ -90,3 +90,20 @@
     width: 100%;
     height: 16rpx;
 }
+
+.reply {
+    
+}
+
+.reply_content {
+    font-size: 32rpx;
+    margin-left: 24rpx;
+    margin-right: 24rpx;
+    margin-bottom: 24rpx;
+}
+
+.reply_divider {
+    background-color: #EEEEEE;  
+    width: 100%;
+    height: 2rpx;
+}

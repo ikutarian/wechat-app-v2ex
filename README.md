@@ -102,6 +102,7 @@ https://www.v2ex.com/api/members/show.json?id=1
 ## 知识点
 
 * css 的 flex 布局
+* css 控制文字的换行
 
 ## 参考demo
 
