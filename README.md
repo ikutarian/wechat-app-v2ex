@@ -113,3 +113,4 @@ https://www.v2ex.com/api/members/show.json?id=1
 * https://www.cnblogs.com/wxapp-union/p/6138830.html
 * http://blog.csdn.net/qianqianstd/article/details/60609389
 * https://www.cnblogs.com/sun8134/p/6395947.html
+* http://blog.csdn.net/liuyan19891230/article/details/50969393 文字不换行

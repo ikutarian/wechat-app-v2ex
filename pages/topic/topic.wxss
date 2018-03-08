@@ -1,0 +1,92 @@
+.header {    
+    padding: 24rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.member_avatar {
+    width: 70rpx;
+    height: 70rpx;
+    background-color: #F2F3F5;
+    border-radius: 4rpx;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 22rpx;
+    flex: 1;
+}
+
+.time {
+    font-size: 22rpx;
+    color: #ADADAD;
+}
+
+.member_username {
+    font-size: 24rpx;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.node {
+    height: 40rpx;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 4rpx;
+}
+
+.node_title {
+    font-size: 20rpx;
+    margin-left: 10rpx;
+    margin-right: 10rpx;
+    color: #ADADAD;
+    word-break: keep-all; 
+}
+
+.reply_img {
+    width: 26rpx;
+    height: 24rpx;
+    margin-left: 14rpx;
+}
+
+.reply_count {
+    font-size: 20rpx;
+    color: #ADADAD;
+    margin-left: 12rpx;
+}
+
+.topic_content {
+    padding-left: 24rpx;
+    padding-right: 24rpx;
+    padding-top: 36rpx;
+    word-break: break-all;
+}
+
+.topic_content text {
+    font-size: 32rpx;
+}
+
+.footer {
+    padding-left: 24rpx;
+    padding-top: 44rpx;
+    padding-bottom: 32rpx;
+}
+
+.footer_text {
+    font-size: 24rpx;
+    color: #000000;
+}
+
+.divider {
+    background-color: #F2F3F5;  
+    width: 100%;
+    height: 16rpx;
+}

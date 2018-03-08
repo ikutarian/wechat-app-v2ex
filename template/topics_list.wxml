@@ -1,24 +1,26 @@
 <template name="topics_list">
   <view wx:for="{{topics}}" wx:for-item="item" wx:key="{{item.id}}">
-    <view class="top">
-        <view class="content">
-            <image class="member_avatar" src="https:{{item.member.avatar_normal}}" mode="scaleToFill"/>
-            <view class="center">
-                <text class="member_username">{{item.member.username}}</text>
-                <text class="time">{{item.last_modified}}</text>
-            </view>
-            <view class="right">
-                <view class="node">
-                    <text class="node_title">{{item.node.title}}</text>
+    <navigator url="../../pages/topic/topic?id={{item.id}}" hover-class="none">
+        <view class="top">
+            <view class="content">
+                <image class="member_avatar" src="https:{{item.member.avatar_normal}}" mode="scaleToFill"/>
+                <view class="center">
+                    <text class="member_username">{{item.member.username}}</text>
+                    <text class="time">{{item.last_modified}}</text>
                 </view>
-                <image class="reply_img" src='/image/reply.png' mode='aspectFill'/>
-                <text class="reply_count">{{item.replies}}</text>
+                <view class="right">
+                    <view class="node">
+                        <text class="node_title">{{item.node.title}}</text>
+                    </view>
+                    <image class="reply_img" src='/image/reply.png' mode='aspectFill'/>
+                    <text class="reply_count">{{item.replies}}</text>
+                </view>
             </view>
+            <view class='topic_title'>
+                <text>{{item.title}}</text>
+            </view>        
         </view>
-        <view class='topic_title'>
-            <text>{{item.title}}</text>
-        </view>        
-    </view>
-    <view class="divider"></view>
+        <view class="divider"></view>
+    </navigator>
   </view>
 </template>
