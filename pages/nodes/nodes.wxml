@@ -1,2 +1,10 @@
-<!--pages/nodes/nodes.wxml-->
-<text>pages/nodes/nodes.wxml</text>
+<view wx:for="{{category_nodes}}" wx:for-item="item" wx:key="{{item.category}}">
+    <view class="category">
+        <text class="category_text">{{item.category}}</text>
+    </view>
+    <view class="nodes">
+        <view wx:for="{{item.nodes}}" wx:for-item="node" wx:key="{{node.id}}">
+            <text class="node_text">{{node.title}}</text>
+        </view>
+    </view>
+</view>

@@ -66,6 +66,16 @@ name: 节点名（V2EX 的节点名全是半角英文或者数字）
 
 https://www.v2ex.com/api/nodes/show.json?name=python
 
+### 根据提供信息取主题
+
+https://www.v2ex.com/api/topics/show.json
+
+接受参数：（任选其一）
+
+username: 根据用户名取该用户所发表主题
+node_id: 根据节点id取该节点下所有主题
+node_name: 根据节点名取该节点下所有主题
+
 ### 用户主页
 
 获得指定用户的自我介绍，及其登记的社交网站信息。

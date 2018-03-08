@@ -1,1 +1,30 @@
-/* pages/nodes/nodes.wxss */
+.category {
+    height: 86rpx;
+    background-color: #EEEEEE;    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.category_text {
+    color: #000000;
+    font-size: 32rpx;
+    margin-left: 20rpx;
+}
+
+
+.nodes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 26rpx;
+    padding-right: 20rpx;
+    padding-bottom: 26rpx;
+}
+
+.node_text {
+    font-size: 28rpx;
+    margin-left: 30rpx;
+    margin-top: 14rpx;
+    white-space:nowrap;
+}
