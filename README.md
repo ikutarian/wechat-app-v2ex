@@ -2,96 +2,7 @@
 
 ## API说明
 
-* https://github.com/djyde/V2EX-API
-* https://gist.github.com/fanzeyi/6951803
-* https://www.v2ex.com/t/85402
-* https://github.com/livid/v2ex/blob/master/api.py
-
-### API请求次数限制
-
-默认情况下，每个 IP 每小时可以发起的 API 请求数被限制在 120 次。可以在 API 返回结果的 HTTP  Header 中找到 Rate Limit 信息
-
-```
-X-Rate-Limit-Limit: 120
-X-Rate-Limit-Reset: 1409479200
-X-Rate-Limit-Remaining: 116
-```
-
-### 获取网站信息
-
-```json
-{
-    "title" : "V2EX",
-    "slogan" : "way to explore",
-    "description" : "创意工作者们的社区",
-    "domain" : "www.v2ex.com"
-}
-```
-
-### 获取取网站状态
-
-```json
-{
-    "topic_max" : 126172,
-    "member_max" : 71033
-}
-```
-
-对于能够被 CDN 缓存的 API 请求，只有第一次请求时，才会消耗 Rate Limit 配额。
-
-### 热门主题
-
-相当于首页右侧的 10 大每天的内容。
-
-https://www.v2ex.com/api/topics/hot.json
-
-### 最新主题
-
-相当于首页的“全部”这个 tab 下的最新内容。
-
-https://www.v2ex.com/api/topics/latest.json
-
-### 节点信息
-
-获得指定节点的名字，简介，URL 及头像图片的地址。
-
-https://www.v2ex.com/api/nodes/show.json
-
-Method: GET
-Authentication: None
-接受参数：
-
-name: 节点名（V2EX 的节点名全是半角英文或者数字）
-例如：
-
-https://www.v2ex.com/api/nodes/show.json?name=python
-
-### 根据提供信息取主题
-
-https://www.v2ex.com/api/topics/show.json
-
-接受参数：（任选其一）
-
-username: 根据用户名取该用户所发表主题
-node_id: 根据节点id取该节点下所有主题
-node_name: 根据节点名取该节点下所有主题
-
-### 用户主页
-
-获得指定用户的自我介绍，及其登记的社交网站信息。
-
-https://www.v2ex.com/api/members/show.json
-
-Method: GET
-Authentication: None
-接受以下参数之一：
-
-username: 用户名
-id: 用户在 V2EX 的数字 ID
-例如：
-
-https://www.v2ex.com/api/members/show.json?username=Livid
-https://www.v2ex.com/api/members/show.json?id=1
+API是从网上收集来的，本小程序需要用到的API只有几个，于是精简了一下，文档在 [wiki](https://github.com/ikutarian/wechat-app-v2ex/wiki/API%E6%96%87%E6%A1%A3) 里
 
 ## 功能模块
 
@@ -115,3 +26,4 @@ https://www.v2ex.com/api/members/show.json?id=1
 * http://blog.csdn.net/qianqianstd/article/details/60609389
 * https://www.cnblogs.com/sun8134/p/6395947.html
 * http://blog.csdn.net/liuyan19891230/article/details/50969393 文字不换行
+* https://www.jianshu.com/p/a3481a255842 页面传参
