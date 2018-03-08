@@ -60,6 +60,13 @@ function getDateDiff(dateTimeStamp) {
   return result;
 };
 
+function processResData(data) {
+  for (var item of data) {
+    item.last_modified = getDateDiff(item.last_modified)
+  }
+  return data;
+}
+
 module.exports = {
-  getDateDiff: getDateDiff
+  processResData: processResData
 }
