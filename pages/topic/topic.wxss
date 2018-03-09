@@ -24,8 +24,18 @@
     color: #ADADAD;
 }
 
+.username_thanks {
+    display: flex;
+    flex-direction: row;
+}
+
 .member_username {
     font-size: 24rpx;
+}
+
+.thanks {
+    font-size: 24rpx;
+    color: #CCC;
 }
 
 .right {
@@ -91,10 +101,6 @@
     height: 16rpx;
 }
 
-.reply {
-    
-}
-
 .reply_content {
     font-size: 32rpx;
     margin-left: 24rpx;
@@ -107,4 +113,17 @@
     background-color: #EEEEEE;  
     width: 100%;
     height: 2rpx;
+}
+
+.loading_container {
+    display: flex;
+    height: 100rpx;
+    background-color: #F2F3F5;
+    justify-content: center;
+    align-items: center;    
+}
+
+.loading_text {
+    font-size: 24rpx;
+    color: #B0B1B3;
 }

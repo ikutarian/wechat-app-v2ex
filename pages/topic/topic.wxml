@@ -21,17 +21,22 @@
 <view class="divider"></view>
 
 <view>
-    <view class="reply" wx:for="{{replies}}" wx:for-item="item" wx:key="{{item.member.id}}">
+    <view wx:for="{{replies}}" wx:for-item="item" wx:key="{{item.member.id}}">
         <view class="header">
             <image class="member_avatar" src="https:{{item.member.avatar_normal}}" mode="scaleToFill"/>
             <view class="center">
-                <text class="member_username">{{item.member.username}}</text>
+                <view class="username_thanks"><text class="member_username">{{item.member.username}}</text><text wx:if="{{item.thanks != 0}}" class="thanks" decode="true">&nbsp;&nbsp;♥&nbsp;{{item.thanks}}</text></view>
                 <text class="time">{{item.last_modified}}</text>
             </view>            
         </view>
         <view class='reply_content'>
             <text>{{item.content}}</text>
         </view>
+        <view class="reply_divider"></view>
     </view>
 </view>
-<view class="reply_divider"></view>
+
+<view class="loading_container" wx:if="{{showLoading}}">
+    <text wx:if="{{laoding_type == 0}}" class="loading_text">加载中...</text>
+    <text wx:elif="{{laoding_type == 1}}" class="loading_text">没有更多评论了</text>
+</view>

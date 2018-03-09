@@ -1,3 +1,5 @@
+var utils = require('../../utils/util.js');
+
 Page({/**
      * 页面的初始数据
      */
@@ -31,7 +33,7 @@ Page({/**
         wx.request({
             url: 'https://www.v2ex.com/api/topics/hot.json',
             success: function(res) {                
-                var utils = require('../../utils/util.js');
+                
                 that.setData({
                   topics: utils.processResData(res.data)
                 });

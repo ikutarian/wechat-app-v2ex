@@ -22,9 +22,17 @@ Page({
             success: function(res) {
                 var data = res.data[0];
                 
+                var temp = new Date(data.last_touched * 1000);
+                var last_time = temp.getFullYear() + '-'
+                    + (temp.getMonth() + 1) + '-'
+                    + temp.getDay() + ' '
+                    + temp.getHours() + ':'
+                    + temp.getMinutes() + ':'
+                    + temp.getSeconds();
+
                 that.setData({
                     item: data,
-                    footer: data.replies + ' 回复&nbsp;|&nbsp;直到 ' + data.last_modified
+                    footer: data.replies + ' 回复&nbsp;|&nbsp;直到 ' + last_time
                 });
             }
         });
@@ -33,7 +41,7 @@ Page({
             url: 'https://www.v2ex.com/api/replies/show.json?topic_id=' + options.id,
             success: function(res) {                
                 that.setData({
-                    replies: res.data
+                    replies: utils.processResData(res.data)
                 });
             }
         });
