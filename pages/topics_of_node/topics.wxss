@@ -1,1 +1,1 @@
-/* pages/topics_of_node/topics.wxss */
+@import "../../template/topics_list"

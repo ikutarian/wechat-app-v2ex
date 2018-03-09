@@ -1,2 +1,2 @@
-<!--pages/topics_of_node/topics.wxml-->
-<text>pages/topics_of_node/topics.wxml</text>
+<import src="../../template/topics_list"/>
+<template is="topics_list" data="{{topics}}"/>

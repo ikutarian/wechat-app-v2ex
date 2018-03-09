@@ -2,9 +2,10 @@
 Page({
 
     onNodeClick: function(event) {
-        var node_id = event.currentTarget.dataset.hi;
+        var node_id = event.currentTarget.dataset.node_id;
+        var node_title = event.currentTarget.dataset.node_title;
         wx.navigateTo({
-            url: '../topics_of_node/topics?node_id=' + node_id
+            url: '../topics_of_node/topics?node_id=' + node_id + '&node_title=' + node_title
         })
     },
 
