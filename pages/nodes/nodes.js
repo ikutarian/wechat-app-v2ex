@@ -1,9 +1,16 @@
 // pages/nodes/nodes.js
 Page({
 
-  /**
-   * 页面的初始数据
-   */
+    onNodeClick: function(event) {
+        var node_id = event.currentTarget.dataset.hi;
+        wx.navigateTo({
+            url: '../topics_of_node/topics?node_id=' + node_id
+        })
+    },
+
+    /**
+     * 页面的初始数据
+    */
     data: {
         category_nodes: [
              {

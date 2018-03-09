@@ -3,7 +3,8 @@
     "pages/hot/hot",
     "pages/latest/latest",
     "pages/nodes/nodes",
-    "pages/topic/topic"
+    "pages/topic/topic",
+    "pages/topics_of_node/topics"
   ],
   
   "window":{

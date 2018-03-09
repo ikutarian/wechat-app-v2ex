@@ -3,7 +3,7 @@
         <text class="category_text">{{item.category}}</text>
     </view>
     <view class="nodes">
-        <view wx:for="{{item.nodes}}" wx:for-item="node" wx:key="{{node.id}}">
+        <view wx:for="{{item.nodes}}" wx:for-item="node" wx:key="{{node.id}}" bindtap="onNodeClick" data-hi="{{node.id}}">
             <text class="node_text">{{node.title}}</text>
         </view>
     </view>
