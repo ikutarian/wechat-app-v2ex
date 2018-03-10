@@ -20,6 +20,7 @@ Page({
         wx.request({
             url: 'https://www.v2ex.com/api/topics/show.json?id=' + options.id,
             success: function(res) {
+                res.data = utils.processResData(res.data);
                 var data = res.data[0];
                 
                 var temp = new Date(data.last_touched * 1000);
