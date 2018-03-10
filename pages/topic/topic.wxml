@@ -13,7 +13,7 @@
     </view>
 </view>
 <view class="topic_content">
-    <text decode="true">{{item.content}}</text>
+    <text decode="true" selectable="true">{{item.content}}</text>
 </view>
 <view class="footer">
     <text class="footer_text" decode="true">{{footer}}</text>
@@ -30,7 +30,7 @@
             </view>            
         </view>
         <view class='reply_content'>
-            <text>{{item.content}}</text>
+            <text selectable="true">{{item.content}}</text>
         </view>
         <view class="reply_divider"></view>
     </view>

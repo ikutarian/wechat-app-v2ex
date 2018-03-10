@@ -29,7 +29,7 @@ Page({
                     + temp.getDay() + ' '
                     + temp.getHours() + ':'
                     + temp.getMinutes() + ':'
-                    + temp.getSeconds();
+                    + temp.getSeconds() + ' +08:00';
 
                 that.setData({
                     item: data,

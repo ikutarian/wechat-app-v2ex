@@ -92,7 +92,7 @@
 
 .footer_text {
     font-size: 24rpx;
-    color: #000000;
+    color: #ADADAD;
 }
 
 .divider {
